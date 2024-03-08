@@ -4,6 +4,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
+/*import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";*/
 
 function App() {
   
@@ -39,10 +44,12 @@ function App() {
       </div>
       <Alert alert={alert}/>
       
-      <div className="container my-10">
+      <div className="container my-10"> 
+       <div>
+        { /* <Route path="/about" element={<Aboutus/>}/>*/}
         <Textform showAlert={showAlert} mode={mode} /> 
-       {/*    <Aboutus ></Aboutus> */}
-      
+        { /* <div exact path="/"  element={ <Textform showAlert={showAlert} mode={mode} /> }/>*/}
+        </div>
         </div>
     </div>
 
